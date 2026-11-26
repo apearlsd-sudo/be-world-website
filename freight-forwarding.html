@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Freight Forwarding Services — BE World Company Ltd</title>
-<meta name="description" content="Air, sea and land freight forwarding — customs clearance, warehousing and door-to-door delivery with tracking from pickup to final destination.">
+<meta name="description" content="Export of raw and processed agric products such as cocoa, shea butter and cashew; importation of luxury vehicle brands — plus air, sea and land freight, customs clearance and door-to-door delivery.">
 <meta property="og:title" content="Freight Forwarding Services — BE World Company Ltd">
-<meta property="og:description" content="Air, sea and land freight forwarding — customs clearance, warehousing and door-to-door delivery with tracking from pickup to final destination.">
+<meta property="og:description" content="Export of raw and processed agric products such as cocoa, shea butter and cashew; importation of luxury vehicle brands — plus air, sea and land freight, customs clearance and door-to-door delivery.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://apearlsd-sudo.github.io/be-world-website/freight-forwarding.html">
 <meta property="og:image" content="https://apearlsd-sudo.github.io/be-world-website/assets/img/og-image.jpg">
@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="BE World Company Ltd">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Freight Forwarding Services — BE World Company Ltd">
-<meta name="twitter:description" content="Air, sea and land freight forwarding — customs clearance, warehousing and door-to-door delivery with tracking from pickup to final destination.">
+<meta name="twitter:description" content="Export of raw and processed agric products such as cocoa, shea butter and cashew; importation of luxury vehicle brands — plus air, sea and land freight, customs clearance and door-to-door delivery.">
 <meta name="twitter:image" content="https://apearlsd-sudo.github.io/be-world-website/assets/img/og-image.jpg">
 <link rel="icon" type="image/png" href="assets/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -225,6 +225,9 @@ main section[id],div.hero[id]{scroll-margin-top:4.6rem}
   transition:background .25s;
 }
 .teaser__item:last-child{border-right:0}
+/* six items → 3 columns; divider discipline per row */
+.teaser__item:nth-child(3n){border-right:0}
+.teaser__item:nth-child(n+4){border-bottom:1px solid var(--line)}
 .teaser__item:hover{background:var(--secondary)}
 .teaser__icon{
   width:3.1rem;height:3.1rem;border-radius:12px;flex:none;
@@ -581,8 +584,10 @@ main section[id],div.hero[id]{scroll-margin-top:4.6rem}
   .mobile-nav .btn{margin-top:1.2rem}
   .hero__badge{display:none}
   .teaser__grid{grid-template-columns:repeat(2,1fr)}
-  .teaser__item:nth-child(2){border-right:0}
-  .teaser__item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .teaser__item:nth-child(3n){border-right:1px solid var(--line)}
+  .teaser__item:nth-child(n+4){border-bottom:0}
+  .teaser__item:nth-child(2n){border-right:0}
+  .teaser__item:nth-child(-n+4){border-bottom:1px solid var(--line)}
   .services__grid{grid-template-columns:1fr}
   .stats__grid{grid-template-columns:repeat(2,1fr);gap:2.2rem 1.5rem}
   .process__grid{grid-template-columns:repeat(2,1fr);row-gap:2.2rem}
@@ -961,8 +966,10 @@ main .zoomable{cursor:zoom-in}
         <div class="sub">
         <a href="mining.html">Mining</a>
         <a href="quarry-mining.html">Quarry Mining</a>
-        <a href="agriculture.html">Agriculture</a>
+        <a href="agribusiness.html">Agribusiness</a>
         <a href="freight-forwarding.html" class="active">Freight Forwarding</a>
+        <a href="commercial-rentals.html">Commercial Rentals</a>
+        <a href="luxury-cars.html">Luxury Cars</a>
         </div>
       </div>
       <a href="contact.html">Contact</a>
@@ -985,8 +992,10 @@ main .zoomable{cursor:zoom-in}
       <a href="services.html">Services</a>
     <a class="sub-link" href="mining.html">Mining</a>
     <a class="sub-link" href="quarry-mining.html">Quarry Mining</a>
-    <a class="sub-link" href="agriculture.html">Agriculture</a>
+    <a class="sub-link" href="agribusiness.html">Agribusiness</a>
     <a class="sub-link" href="freight-forwarding.html">Freight Forwarding</a>
+    <a class="sub-link" href="commercial-rentals.html">Commercial Rentals</a>
+    <a class="sub-link" href="luxury-cars.html">Luxury Cars</a>
       <a href="contact.html">Contact</a>
   </div>
 </div>
@@ -1000,7 +1009,7 @@ main .zoomable{cursor:zoom-in}
   <div class="container page-hero__inner">
     <p class="kicker">Our Services</p>
     <h1>Freight Forwarding</h1>
-    <p class="lead">Air, sea and land forwarding under one desk — customs clearance, warehousing and door-to-door delivery, with tracking from pickup to final destination.</p>
+    <p class="lead">Air, sea and land forwarding under one desk — exporting Ghana's agric products like cocoa, shea butter and cashew, importing luxury vehicle brands, and moving general cargo door to door with full documentation.</p>
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="index.html">Home</a><span class="sep">›</span><a href="services.html">Services</a><span class="sep">›</span><span aria-current="page">Freight Forwarding</span>
     </nav>
@@ -1017,10 +1026,10 @@ main .zoomable{cursor:zoom-in}
       <p class="kicker">Service Overview</p>
       <h2 class="h2" style="margin-top:.7rem">One Desk for the <span class="accent">Whole Journey</span></h2>
       <p class="lead" style="margin-top:.9rem">Freight fails in the gaps: the document that arrives late, the container that misses the vessel, the truck that never gets booked. We close those gaps by managing the entire journey from one desk — booking, documentation, clearance, transport and delivery — with one point of contact who owns your consignment end to end.</p>
-      <p class="lead" style="margin-top:1rem">Our forwarding desk handles both imports and exports across sea, air and land, and integrates naturally with our mining and agricultural operations — which means we understand bulky mineral consignments and time-sensitive produce just as well as standard container cargo.</p>
+      <p class="lead" style="margin-top:1rem">Our forwarding desk handles both imports and exports across sea, air and land, with two desks that know their cargo inside out: we export raw and processed agric products — cocoa, shea butter, cashew and more — and we import all types of luxury vehicle brands. Bulky mineral consignments, time-sensitive produce and high-value vehicles all move through the same disciplined system.</p>
       <ul class="check-list">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>One point of contact for the entire shipment</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Documentation and clearance handled by specialists</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Specialist desks for agric exports and vehicle imports</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Status updates from pickup to final delivery</li>
       </ul>
     </div>
@@ -1054,6 +1063,33 @@ main .zoomable{cursor:zoom-in}
   </div>
 </section>
 
+<!-- ================= SPECIALISED CARGO ================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <p class="kicker">Specialised Desks</p>
+      <h2 class="h2" style="margin-top:.8rem">Cargo That Needs <span class="accent">a Specialist, Not a Broker</span></h2>
+    </div>
+    <div class="values__grid" style="margin-top:1.6rem">
+      <div class="value-card reveal">
+        <span class="value-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V7"/><path d="M12 10c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6z"/><path d="M12 14c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/><path d="M12 18c0-3.5 2.5-6 6-6 0 3.5 2.5 6 6 6z"/></svg></span>
+        <h3>Agri-Export Desk</h3>
+        <p>Exportation of raw and processed agric products — cocoa, shea butter, cashew and more. Phytosanitary certificates, certificates of origin and buyer-grade packaging handled in-house, backed by our own agribusiness processing lines.</p>
+      </div>
+      <div class="value-card reveal" data-delay="1">
+        <span class="value-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11h14l-1.5-5.5a2 2 0 0 0-2-1.5h-7a2 2 0 0 0-2 1.5L5 11z"/><path d="M3 17h18"/><path d="M4 11h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z"/><circle cx="7.5" cy="18.5" r="1"/><circle cx="16.5" cy="18.5" r="1"/></svg></span>
+        <h3>Vehicle Import Desk</h3>
+        <p>Importation of all types of luxury vehicle brands — roll-on/roll-off or container, duties calculated and paid, customs cleared and vehicles delivered with their papers in order. The same desk behind our luxury car sales service.</p>
+      </div>
+      <div class="value-card reveal" data-delay="2">
+        <span class="value-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M6 8h4M6 12h3"/><path d="M14 8h4M14 12h4"/></svg></span>
+        <h3>General Cargo Desk</h3>
+        <p>Containers, bulk consignments and project cargo for mining, quarrying and construction clients — including our own equipment movements between sites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= WHAT'S INCLUDED ================= -->
 <section class="section">
   <div class="container">
@@ -1065,8 +1101,8 @@ main .zoomable{cursor:zoom-in}
       <div class="include-card reveal"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><div><h3>Customs Clearance</h3><p>Import and export declarations, duty classification and clearance follow-through.</p></div></div>
       <div class="include-card reveal" data-delay="1"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5"/><path d="M12 13v8"/></svg></span><div><h3>Warehousing</h3><p>Secure short and medium-term storage with inventory records and order preparation.</p></div></div>
       <div class="include-card reveal" data-delay="2"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><h3>Door-to-Door Delivery</h3><p>Final-mile delivery scheduled with the consignee — cargo arrives when promised.</p></div></div>
-      <div class="include-card reveal"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><div><h3>Documentation</h3><p>Bills of lading, certificates of origin and shipping instructions prepared correctly, first time.</p></div></div>
-      <div class="include-card reveal" data-delay="1"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>Cargo Care</h3><p>Proper packing guidance, loading supervision and insurance options for sensitive cargo.</p></div></div>
+      <div class="include-card reveal"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><div><h3>Agri-Export Documentation</h3><p>Phytosanitary certificates, certificates of origin and shipping instructions for agric exports — prepared correctly, first time.</p></div></div>
+      <div class="include-card reveal" data-delay="1"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11h14l-1.5-5.5a2 2 0 0 0-2-1.5h-7a2 2 0 0 0-2 1.5L5 11z"/><path d="M3 17h18"/><path d="M4 11h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z"/><circle cx="7.5" cy="18.5" r="1"/><circle cx="16.5" cy="18.5" r="1"/></svg></span><div><h3>Vehicle Import Handling</h3><p>RoRo and container imports for luxury vehicles — duties, clearance and delivery handled to handover.</p></div></div>
       <div class="include-card reveal" data-delay="2"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><div><h3>Shipment Tracking</h3><p>Clear status updates at each milestone — booking, departure, arrival, clearance, delivery.</p></div></div>
     </div>
   </div>
@@ -1093,7 +1129,7 @@ main .zoomable{cursor:zoom-in}
         <img class="logo__img" src="assets/brand/logo.png" alt="" aria-hidden="true">
         <span class="logo__name">BE World<small>Company Ltd</small></span>
       </a>
-      <p style="margin-top:1.1rem">A diversified natural-resources and logistics company — mining, quarrying, agriculture and freight forwarding under one accountable roof.</p>
+      <p style="margin-top:1.1rem">A diversified natural-resources and logistics company — mining, quarrying, agribusiness, freight forwarding, commercial rentals and luxury vehicle sales under one accountable roof.</p>
       <div class="footer__social">
         <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
@@ -1117,8 +1153,10 @@ main .zoomable{cursor:zoom-in}
       <ul class="footer__links">
         <li><a href="mining.html">Mining</a></li>
         <li><a href="quarry-mining.html">Quarry Mining</a></li>
-        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="agribusiness.html">Agribusiness</a></li>
         <li><a href="freight-forwarding.html">Freight Forwarding</a></li>
+        <li><a href="commercial-rentals.html">Commercial Building Rentals</a></li>
+        <li><a href="luxury-cars.html">Luxury Car Sales &amp; Rentals</a></li>
       </ul>
     </div>
     <div class="footer__contact-col">
@@ -1445,9 +1483,9 @@ main .zoomable{cursor:zoom-in}
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Bright Esson World Company Ltd",
-  "description": "Diversified natural-resources and logistics company: mining, quarry mining, agriculture and freight forwarding.",
+  "description": "Diversified natural-resources and logistics company: mining, quarry mining, agribusiness, freight forwarding, commercial building rentals and luxury vehicle sales.",
   "slogan": "From the Earth to the World",
-  "knowsAbout": ["Mining","Quarry Mining","Agriculture","Freight Forwarding"]
+  "knowsAbout": ["Mining","Quarry Mining","Agribusiness","Shea Butter Production","Cashew Processing","Cocoa Processing","Freight Forwarding","Commercial Building Rentals","Luxury Vehicle Sales","Vehicle Rentals"]
 }
 </script>
 </body>

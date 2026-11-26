@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BE World Company Ltd — Mining · Quarry Mining · Agriculture · Freight Forwarding</title>
-<meta name="description" content="Bright Esson World Company Ltd is a diversified natural-resources and logistics company delivering mining, quarry mining, agriculture and freight forwarding services from the earth to the world.">
-<meta property="og:title" content="BE World Company Ltd — Mining · Quarry Mining · Agriculture · Freight Forwarding">
-<meta property="og:description" content="Bright Esson World Company Ltd is a diversified natural-resources and logistics company delivering mining, quarry mining, agriculture and freight forwarding services from the earth to the world.">
+<title>BE World Company Ltd — Mining · Quarry · Agribusiness · Freight · Rentals · Luxury Cars</title>
+<meta name="description" content="Bright Esson World Company Ltd is a diversified natural-resources and logistics company delivering mining, quarry mining, agribusiness, freight forwarding, commercial building rentals and luxury vehicle sales.">
+<meta property="og:title" content="BE World Company Ltd — Mining · Quarry · Agribusiness · Freight · Rentals · Luxury Cars">
+<meta property="og:description" content="Bright Esson World Company Ltd is a diversified natural-resources and logistics company delivering mining, quarry mining, agribusiness, freight forwarding, commercial building rentals and luxury vehicle sales.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://apearlsd-sudo.github.io/be-world-website/">
 <meta property="og:image" content="https://apearlsd-sudo.github.io/be-world-website/assets/img/og-image.jpg">
@@ -14,8 +14,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="BE World Company Ltd">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BE World Company Ltd — Mining · Quarry Mining · Agriculture · Freight Forwarding">
-<meta name="twitter:description" content="Bright Esson World Company Ltd is a diversified natural-resources and logistics company delivering mining, quarry mining, agriculture and freight forwarding services from the earth to the world.">
+<meta name="twitter:title" content="BE World Company Ltd — Mining · Quarry · Agribusiness · Freight · Rentals · Luxury Cars">
+<meta name="twitter:description" content="Bright Esson World Company Ltd is a diversified natural-resources and logistics company delivering mining, quarry mining, agribusiness, freight forwarding, commercial building rentals and luxury vehicle sales.">
 <meta name="twitter:image" content="https://apearlsd-sudo.github.io/be-world-website/assets/img/og-image.jpg">
 <link rel="icon" type="image/png" href="assets/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -225,6 +225,9 @@ main section[id],div.hero[id]{scroll-margin-top:4.6rem}
   transition:background .25s;
 }
 .teaser__item:last-child{border-right:0}
+/* six items → 3 columns; divider discipline per row */
+.teaser__item:nth-child(3n){border-right:0}
+.teaser__item:nth-child(n+4){border-bottom:1px solid var(--line)}
 .teaser__item:hover{background:var(--secondary)}
 .teaser__icon{
   width:3.1rem;height:3.1rem;border-radius:12px;flex:none;
@@ -581,8 +584,10 @@ main section[id],div.hero[id]{scroll-margin-top:4.6rem}
   .mobile-nav .btn{margin-top:1.2rem}
   .hero__badge{display:none}
   .teaser__grid{grid-template-columns:repeat(2,1fr)}
-  .teaser__item:nth-child(2){border-right:0}
-  .teaser__item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .teaser__item:nth-child(3n){border-right:1px solid var(--line)}
+  .teaser__item:nth-child(n+4){border-bottom:0}
+  .teaser__item:nth-child(2n){border-right:0}
+  .teaser__item:nth-child(-n+4){border-bottom:1px solid var(--line)}
   .services__grid{grid-template-columns:1fr}
   .stats__grid{grid-template-columns:repeat(2,1fr);gap:2.2rem 1.5rem}
   .process__grid{grid-template-columns:repeat(2,1fr);row-gap:2.2rem}
@@ -961,8 +966,10 @@ main .zoomable{cursor:zoom-in}
         <div class="sub">
         <a href="mining.html">Mining</a>
         <a href="quarry-mining.html">Quarry Mining</a>
-        <a href="agriculture.html">Agriculture</a>
+        <a href="agribusiness.html">Agribusiness</a>
         <a href="freight-forwarding.html">Freight Forwarding</a>
+        <a href="commercial-rentals.html">Commercial Rentals</a>
+        <a href="luxury-cars.html">Luxury Cars</a>
         </div>
       </div>
       <a href="contact.html">Contact</a>
@@ -985,8 +992,10 @@ main .zoomable{cursor:zoom-in}
       <a href="services.html">Services</a>
     <a class="sub-link" href="mining.html">Mining</a>
     <a class="sub-link" href="quarry-mining.html">Quarry Mining</a>
-    <a class="sub-link" href="agriculture.html">Agriculture</a>
+    <a class="sub-link" href="agribusiness.html">Agribusiness</a>
     <a class="sub-link" href="freight-forwarding.html">Freight Forwarding</a>
+    <a class="sub-link" href="commercial-rentals.html">Commercial Rentals</a>
+    <a class="sub-link" href="luxury-cars.html">Luxury Cars</a>
       <a href="contact.html">Contact</a>
   </div>
 </div>
@@ -1001,7 +1010,7 @@ main .zoomable{cursor:zoom-in}
     <div class="hero__slide-content container">
       <p class="hero__kicker">Bright Esson World Company Ltd</p>
       <h1 class="hero__title">Mining Excellence From the Heart of the <span class="accent">Earth</span></h1>
-      <p class="hero__text">Responsible mineral extraction backed by modern equipment, rigorous safety standards and an experienced workforce — from exploration support to full contract mining and haulage.</p>
+      <p class="hero__text">Responsible mining operations in Tarkwa backed by modern equipment, rigorous safety standards and an experienced workforce — with heavy equipment and truck rentals trusted by major operators such as Newmont Ghana.</p>
       <div class="hero__actions">
         <a class="btn btn--primary" href="services.html">Explore Services<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>      </div>
     </div>
@@ -1020,14 +1029,14 @@ main .zoomable{cursor:zoom-in}
   </div>
   <div class="hero__slide" data-slide="2">
     <figure class="hero__bg" aria-hidden="true">
-      <img src="assets/img/agriculture-field.jpg" alt="Green maize field under a clear sky" loading="lazy">
+      <img src="assets/img/agriculture-field.jpg" alt="Green crop fields on company farmland" loading="lazy">
     </figure>
     <div class="hero__slide-content container">
-      <p class="hero__kicker">Agriculture</p>
-      <h1 class="hero__title">Farming That Feeds <span class="accent">Nations</span></h1>
-      <p class="hero__text">Large-scale cultivation of staple and cash crops, produce aggregation and storage — connecting farms to local markets and export channels with dependable volumes.</p>
+      <p class="hero__kicker">Agribusiness</p>
+      <h1 class="hero__title">From the Field to the <span class="accent">World Market</span></h1>
+      <p class="hero__text">Raw and processed shea butter, cashew and cocoa processing, and commercial farming at scale — Ghana's signature crops, prepared to buyer specification and exported with full documentation.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="agriculture.html">Explore Services<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>      </div>
+        <a class="btn btn--primary" href="agribusiness.html">Explore Services<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>      </div>
     </div>
   </div>
   <div class="hero__slide" data-slide="3">
@@ -1042,12 +1051,38 @@ main .zoomable{cursor:zoom-in}
         <a class="btn btn--primary" href="freight-forwarding.html">Explore Services<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>      </div>
     </div>
   </div>
-  <div class="hero__badge" aria-hidden="true"><b id="heroIndex">01</b>&nbsp;/&nbsp;04</div>
+  <div class="hero__slide" data-slide="4">
+    <figure class="hero__bg" aria-hidden="true">
+      <img src="assets/img/office-building.jpg" alt="Modern commercial office building with a landscaped entrance" loading="lazy">
+    </figure>
+    <div class="hero__slide-content container">
+      <p class="hero__kicker">Commercial Building Rentals</p>
+      <h1 class="hero__title">Office Space Where <span class="accent">Business Grows</span></h1>
+      <p class="hero__text">Commercial office buildings let to banks and other offices — prime locations, reliable utilities, secure access and a landlord who maintains the property on a written schedule.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="commercial-rentals.html">Explore Services<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>      </div>
+    </div>
+  </div>
+  <div class="hero__slide" data-slide="5">
+    <figure class="hero__bg" aria-hidden="true">
+      <img src="assets/img/luxury-car.jpg" alt="Prestigious black luxury SUV in an upscale showroom" loading="lazy">
+    </figure>
+    <div class="hero__slide-content container">
+      <p class="hero__kicker">Luxury Car Sales &amp; Rentals</p>
+      <h1 class="hero__title">Arrive Like You <span class="accent">Mean It</span></h1>
+      <p class="hero__text">Sales and rentals of all types of luxury vehicle brands — inspected, fully documented, and importable to order through our own freight forwarding desk.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="luxury-cars.html">Explore Services<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>      </div>
+    </div>
+  </div>
+  <div class="hero__badge" aria-hidden="true"><b id="heroIndex">01</b>&nbsp;/&nbsp;06</div>
   <div class="hero__dots" role="tablist" aria-label="Choose slide">
     <button class="hero__dot active" role="tab" aria-selected="true" aria-label="Slide 1: Mining"></button>
     <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 2: Quarry mining"></button>
-    <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 3: Agriculture"></button>
+    <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 3: Agribusiness"></button>
     <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 4: Freight forwarding"></button>
+    <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 5: Commercial building rentals"></button>
+    <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 6: Luxury car sales and rentals"></button>
   </div>
   <div class="hero__arrows">
     <button class="hero__arrow" id="heroPrev" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
@@ -1066,13 +1101,21 @@ main .zoomable{cursor:zoom-in}
         <span class="teaser__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 20 6.5-14 4 7.5L15 9l7 11H2z"/></svg></span>
         <span><span class="teaser__name">Quarry Mining</span><span class="teaser__link">Read More →</span></span>
       </a>
-      <a class="teaser__item" href="agriculture.html">
-        <span class="teaser__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V7"/><path d="M12 10c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6z"/><path d="M12 14c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/><path d="M12 18c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6z"/></svg></span>
-        <span><span class="teaser__name">Agriculture</span><span class="teaser__link">Read More →</span></span>
+      <a class="teaser__item" href="agribusiness.html">
+        <span class="teaser__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V7"/><path d="M12 10c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6z"/><path d="M12 14c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/><path d="M12 18c0-3.5 2.5-6 6-6 0 3.5 2.5 6 6 6z"/></svg></span>
+        <span><span class="teaser__name">Agribusiness</span><span class="teaser__link">Read More →</span></span>
       </a>
       <a class="teaser__item" href="freight-forwarding.html">
         <span class="teaser__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span>
         <span><span class="teaser__name">Freight Forwarding</span><span class="teaser__link">Read More →</span></span>
+      </a>
+      <a class="teaser__item" href="commercial-rentals.html">
+        <span class="teaser__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-4h6v4"/><path d="M9 11h.01M12 11h.01M15 11h.01M9 14h.01M12 14h.01M15 14h.01"/></svg></span>
+        <span><span class="teaser__name">Commercial Rentals</span><span class="teaser__link">Read More →</span></span>
+      </a>
+      <a class="teaser__item" href="luxury-cars.html">
+        <span class="teaser__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11h14l-1.5-5.5a2 2 0 0 0-2-1.5h-7a2 2 0 0 0-2 1.5L5 11z"/><path d="M3 17h18"/><path d="M4 11h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z"/><circle cx="7.5" cy="18.5" r="1"/><circle cx="16.5" cy="18.5" r="1"/></svg></span>
+        <span><span class="teaser__name">Luxury Cars</span><span class="teaser__link">Read More →</span></span>
       </a>
     </div>
   </div>
@@ -1083,12 +1126,14 @@ main .zoomable{cursor:zoom-in}
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track">
     <div class="marquee__group">
-      <span>Mining</span><i>·</i><span>Quarry Mining</span><i>·</i><span>Agriculture</span><i>·</i>
-      <span>Freight Forwarding</span><i>·</i><span>Accra · Ghana</span><i>·</i><span>From the Earth to the World</span><i>·</i>
+      <span>Mining</span><i>·</i><span>Quarry Mining</span><i>·</i><span>Agribusiness</span><i>·</i>
+      <span>Freight Forwarding</span><i>·</i><span>Commercial Rentals</span><i>·</i><span>Luxury Cars</span><i>·</i>
+      <span>Accra · Ghana</span><i>·</i><span>From the Earth to the World</span><i>·</i>
     </div>
     <div class="marquee__group">
-      <span>Mining</span><i>·</i><span>Quarry Mining</span><i>·</i><span>Agriculture</span><i>·</i>
-      <span>Freight Forwarding</span><i>·</i><span>Accra · Ghana</span><i>·</i><span>From the Earth to the World</span><i>·</i>
+      <span>Mining</span><i>·</i><span>Quarry Mining</span><i>·</i><span>Agribusiness</span><i>·</i>
+      <span>Freight Forwarding</span><i>·</i><span>Commercial Rentals</span><i>·</i><span>Luxury Cars</span><i>·</i>
+      <span>Accra · Ghana</span><i>·</i><span>From the Earth to the World</span><i>·</i>
     </div>
   </div>
 </div>
@@ -1108,7 +1153,7 @@ main .zoomable{cursor:zoom-in}
     <div class="reveal" data-delay="1">
       <p class="kicker">About Bright Esson World</p>
       <h2 class="h2" style="margin-top:.8rem">From the Earth to the World — <span class="accent">Resources, Harvested and Delivered</span></h2>
-      <p class="lead" style="margin-top:1.1rem">Bright Esson World Company Ltd is a diversified natural-resources and logistics company. We extract, produce, grow and move — combining four capabilities under one roof so our clients deal with a single accountable partner across the entire value chain.</p>
+      <p class="lead" style="margin-top:1.1rem">Bright Esson World Company Ltd is a diversified natural-resources and logistics company. We extract, produce, grow and move — combining six capabilities under one roof so our clients deal with a single accountable partner across the entire value chain.</p>
       <ul class="about__list">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licensed, compliant operations with full environmental and safety management</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Modern fleet and heavy equipment maintained to international standards</li>
@@ -1133,7 +1178,7 @@ main .zoomable{cursor:zoom-in}
       <div class="section-head reveal">
         <p class="kicker">What We Do</p>
         <h2 class="h2" style="margin-top:.8rem">Explore Our <span class="accent">Services</span></h2>
-        <p class="lead">Four capabilities, one partner. Every service is delivered by dedicated in-house teams with the equipment, permits and processes to perform at scale.</p>
+        <p class="lead">Six capabilities, one partner. Every service is delivered by dedicated in-house teams with the equipment, permits and processes to perform at scale.</p>
       </div>
       <a class="btn btn--dark reveal" href="services.html" data-delay="1">View All Services</a>
     </div>
@@ -1167,14 +1212,14 @@ main .zoomable{cursor:zoom-in}
       <article class="service-card reveal">
         <div class="service-card__media">
           <span class="service-card__num">03</span>
-          <img data-plx="14" src="assets/img/agriculture-field.jpg" alt="Rows of maize growing on company farmland" loading="lazy">
-          <span class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V7"/><path d="M12 10c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6z"/><path d="M12 14c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/><path d="M12 18c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6z"/></svg></span>
+          <img data-plx="14" src="assets/img/agriculture-field.jpg" alt="Rows of crops growing on company farmland" loading="lazy">
+          <span class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V7"/><path d="M12 10c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6z"/><path d="M12 14c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/><path d="M12 18c0-3.5 2.5-6 6-6 0 3.5 2.5 6 6 6z"/></svg></span>
         </div>
         <div class="service-card__body">
-          <h3 class="h3">Agriculture</h3>
-          <p>Large-scale cultivation of maize, cassava and cash crops, plus produce aggregation and storage — supplying food processors, local markets and export buyers with dependable volumes.</p>
-          <div class="service-card__tags"><span>Crop Cultivation</span><span>Produce Aggregation</span><span>Storage</span></div>
-          <a class="service-card__link" href="agriculture.html">Explore Service<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 class="h3">Agribusiness</h3>
+          <p>Commercial farming plus value-added processing — raw and refined shea butter for local and international markets, cashew processing, cocoa processing and dependable aggregated volumes for buyers.</p>
+          <div class="service-card__tags"><span>Shea Butter</span><span>Cashew &amp; Cocoa</span><span>Commercial Farming</span></div>
+          <a class="service-card__link" href="agribusiness.html">Explore Service<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
       <article class="service-card reveal" data-delay="1">
@@ -1188,6 +1233,32 @@ main .zoomable{cursor:zoom-in}
           <p>End-to-end import and export logistics: customs clearance, port operations, warehousing and last-mile delivery by road, sea and air — with tracking from pickup to final destination.</p>
           <div class="service-card__tags"><span>Customs Clearance</span><span>Warehousing</span><span>Door-to-Door</span></div>
           <a class="service-card__link" href="freight-forwarding.html">Explore Service<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card__media">
+          <span class="service-card__num">05</span>
+          <img data-plx="14" src="assets/img/office-building.jpg" alt="Modern commercial office building with a landscaped entrance" loading="lazy">
+          <span class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-4h6v4"/><path d="M9 11h.01M12 11h.01M15 11h.01M9 14h.01M12 14h.01M15 14h.01"/></svg></span>
+        </div>
+        <div class="service-card__body">
+          <h3 class="h3">Commercial Building Rentals</h3>
+          <p>Commercial office buildings let to banks and other offices — prime locations, reliable utilities, secure access and planned maintenance by a landlord who responds.</p>
+          <div class="service-card__tags"><span>Office Buildings</span><span>Bank-Grade Space</span><span>Full Management</span></div>
+          <a class="service-card__link" href="commercial-rentals.html">Explore Service<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="service-card reveal" data-delay="1">
+        <div class="service-card__media">
+          <span class="service-card__num">06</span>
+          <img data-plx="14" src="assets/img/luxury-car.jpg" alt="Prestigious black luxury SUV in an upscale showroom" loading="lazy">
+          <span class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11h14l-1.5-5.5a2 2 0 0 0-2-1.5h-7a2 2 0 0 0-2 1.5L5 11z"/><path d="M3 17h18"/><path d="M4 11h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z"/><circle cx="7.5" cy="18.5" r="1"/><circle cx="16.5" cy="18.5" r="1"/></svg></span>
+        </div>
+        <div class="service-card__body">
+          <h3 class="h3">Luxury Car Sales &amp; Rentals</h3>
+          <p>Sales and rentals of all types of luxury vehicle brands — inspected vehicles with clean documentation, plus import-to-order through our own freight forwarding desk.</p>
+          <div class="service-card__tags"><span>Luxury Sales</span><span>Rentals</span><span>Import to Order</span></div>
+          <a class="service-card__link" href="luxury-cars.html">Explore Service<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
     </div>
@@ -1218,8 +1289,8 @@ main .zoomable{cursor:zoom-in}
     </div>
     <div class="reveal" data-delay="1">
       <p class="kicker">Why Choose Us</p>
-      <h2 class="h2" style="margin-top:.8rem">One Partner, Four Capabilities, <span class="accent">Zero Handover Gaps</span></h2>
-      <p class="lead" style="margin-top:1rem">Most projects fail at the seams between contractors. Because we own the pit, the field and the freight desk, nothing gets lost between stages — and accountability never leaves our hands.</p>
+      <h2 class="h2" style="margin-top:.8rem">One Partner, Six Capabilities, <span class="accent">Zero Handover Gaps</span></h2>
+      <p class="lead" style="margin-top:1rem">Most projects fail at the seams between contractors. Because we own the pit, the field, the freight desk, the buildings and the vehicle desk, nothing gets lost between stages — and accountability never leaves our hands.</p>
       <div class="why__list">
         <div class="why__item">
           <span class="why__item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
@@ -1288,7 +1359,7 @@ main .zoomable{cursor:zoom-in}
     <div class="section-head reveal">
       <p class="kicker">Recent Work</p>
       <h2 class="h2" style="margin-top:.8rem">Projects in <span class="accent">Motion</span></h2>
-      <p class="lead">A snapshot of the engagements our crews, plants and brokers deliver across the four divisions.</p>
+      <p class="lead">A snapshot of the engagements our crews, plants and brokers deliver across the six divisions.</p>
     </div>
     <div class="proj-grid">
       <article class="proj-card reveal">
@@ -1353,7 +1424,7 @@ main .zoomable{cursor:zoom-in}
         <img class="logo__img" src="assets/brand/logo.png" alt="" aria-hidden="true">
         <span class="logo__name">BE World<small>Company Ltd</small></span>
       </a>
-      <p style="margin-top:1.1rem">A diversified natural-resources and logistics company — mining, quarrying, agriculture and freight forwarding under one accountable roof.</p>
+      <p style="margin-top:1.1rem">A diversified natural-resources and logistics company — mining, quarrying, agribusiness, freight forwarding, commercial rentals and luxury vehicle sales under one accountable roof.</p>
       <div class="footer__social">
         <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
@@ -1377,8 +1448,10 @@ main .zoomable{cursor:zoom-in}
       <ul class="footer__links">
         <li><a href="mining.html">Mining</a></li>
         <li><a href="quarry-mining.html">Quarry Mining</a></li>
-        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="agribusiness.html">Agribusiness</a></li>
         <li><a href="freight-forwarding.html">Freight Forwarding</a></li>
+        <li><a href="commercial-rentals.html">Commercial Building Rentals</a></li>
+        <li><a href="luxury-cars.html">Luxury Car Sales &amp; Rentals</a></li>
       </ul>
     </div>
     <div class="footer__contact-col">
@@ -1705,9 +1778,9 @@ main .zoomable{cursor:zoom-in}
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Bright Esson World Company Ltd",
-  "description": "Diversified natural-resources and logistics company: mining, quarry mining, agriculture and freight forwarding.",
+  "description": "Diversified natural-resources and logistics company: mining, quarry mining, agribusiness, freight forwarding, commercial building rentals and luxury vehicle sales.",
   "slogan": "From the Earth to the World",
-  "knowsAbout": ["Mining","Quarry Mining","Agriculture","Freight Forwarding"]
+  "knowsAbout": ["Mining","Quarry Mining","Agribusiness","Shea Butter Production","Cashew Processing","Cocoa Processing","Freight Forwarding","Commercial Building Rentals","Luxury Vehicle Sales","Vehicle Rentals"]
 }
 </script>
 </body>

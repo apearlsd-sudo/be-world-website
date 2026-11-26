@@ -225,6 +225,9 @@ main section[id],div.hero[id]{scroll-margin-top:4.6rem}
   transition:background .25s;
 }
 .teaser__item:last-child{border-right:0}
+/* six items → 3 columns; divider discipline per row */
+.teaser__item:nth-child(3n){border-right:0}
+.teaser__item:nth-child(n+4){border-bottom:1px solid var(--line)}
 .teaser__item:hover{background:var(--secondary)}
 .teaser__icon{
   width:3.1rem;height:3.1rem;border-radius:12px;flex:none;
@@ -581,8 +584,10 @@ main section[id],div.hero[id]{scroll-margin-top:4.6rem}
   .mobile-nav .btn{margin-top:1.2rem}
   .hero__badge{display:none}
   .teaser__grid{grid-template-columns:repeat(2,1fr)}
-  .teaser__item:nth-child(2){border-right:0}
-  .teaser__item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .teaser__item:nth-child(3n){border-right:1px solid var(--line)}
+  .teaser__item:nth-child(n+4){border-bottom:0}
+  .teaser__item:nth-child(2n){border-right:0}
+  .teaser__item:nth-child(-n+4){border-bottom:1px solid var(--line)}
   .services__grid{grid-template-columns:1fr}
   .stats__grid{grid-template-columns:repeat(2,1fr);gap:2.2rem 1.5rem}
   .process__grid{grid-template-columns:repeat(2,1fr);row-gap:2.2rem}
@@ -961,8 +966,10 @@ main .zoomable{cursor:zoom-in}
         <div class="sub">
         <a href="mining.html">Mining</a>
         <a href="quarry-mining.html" class="active">Quarry Mining</a>
-        <a href="agriculture.html">Agriculture</a>
+        <a href="agribusiness.html">Agribusiness</a>
         <a href="freight-forwarding.html">Freight Forwarding</a>
+        <a href="commercial-rentals.html">Commercial Rentals</a>
+        <a href="luxury-cars.html">Luxury Cars</a>
         </div>
       </div>
       <a href="contact.html">Contact</a>
@@ -985,8 +992,10 @@ main .zoomable{cursor:zoom-in}
       <a href="services.html">Services</a>
     <a class="sub-link" href="mining.html">Mining</a>
     <a class="sub-link" href="quarry-mining.html">Quarry Mining</a>
-    <a class="sub-link" href="agriculture.html">Agriculture</a>
+    <a class="sub-link" href="agribusiness.html">Agribusiness</a>
     <a class="sub-link" href="freight-forwarding.html">Freight Forwarding</a>
+    <a class="sub-link" href="commercial-rentals.html">Commercial Rentals</a>
+    <a class="sub-link" href="luxury-cars.html">Luxury Cars</a>
       <a href="contact.html">Contact</a>
   </div>
 </div>
@@ -1089,7 +1098,7 @@ main .zoomable{cursor:zoom-in}
         <img class="logo__img" src="assets/brand/logo.png" alt="" aria-hidden="true">
         <span class="logo__name">BE World<small>Company Ltd</small></span>
       </a>
-      <p style="margin-top:1.1rem">A diversified natural-resources and logistics company — mining, quarrying, agriculture and freight forwarding under one accountable roof.</p>
+      <p style="margin-top:1.1rem">A diversified natural-resources and logistics company — mining, quarrying, agribusiness, freight forwarding, commercial rentals and luxury vehicle sales under one accountable roof.</p>
       <div class="footer__social">
         <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
@@ -1113,8 +1122,10 @@ main .zoomable{cursor:zoom-in}
       <ul class="footer__links">
         <li><a href="mining.html">Mining</a></li>
         <li><a href="quarry-mining.html">Quarry Mining</a></li>
-        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="agribusiness.html">Agribusiness</a></li>
         <li><a href="freight-forwarding.html">Freight Forwarding</a></li>
+        <li><a href="commercial-rentals.html">Commercial Building Rentals</a></li>
+        <li><a href="luxury-cars.html">Luxury Car Sales &amp; Rentals</a></li>
       </ul>
     </div>
     <div class="footer__contact-col">
@@ -1441,9 +1452,9 @@ main .zoomable{cursor:zoom-in}
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Bright Esson World Company Ltd",
-  "description": "Diversified natural-resources and logistics company: mining, quarry mining, agriculture and freight forwarding.",
+  "description": "Diversified natural-resources and logistics company: mining, quarry mining, agribusiness, freight forwarding, commercial building rentals and luxury vehicle sales.",
   "slogan": "From the Earth to the World",
-  "knowsAbout": ["Mining","Quarry Mining","Agriculture","Freight Forwarding"]
+  "knowsAbout": ["Mining","Quarry Mining","Agribusiness","Shea Butter Production","Cashew Processing","Cocoa Processing","Freight Forwarding","Commercial Building Rentals","Luxury Vehicle Sales","Vehicle Rentals"]
 }
 </script>
 </body>

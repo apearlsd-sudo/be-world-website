@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About Us — BE World Company Ltd</title>
-<meta name="description" content="Learn about Bright Esson World Company Ltd — a diversified natural-resources and logistics company combining mining, quarry mining, agriculture and freight forwarding under one roof.">
+<meta name="description" content="Learn about Bright Esson World Company Ltd — a diversified natural-resources and logistics company combining mining, quarry mining, agribusiness, freight forwarding, commercial rentals and luxury vehicle sales under one roof.">
 <meta property="og:title" content="About Us — BE World Company Ltd">
-<meta property="og:description" content="Learn about Bright Esson World Company Ltd — a diversified natural-resources and logistics company combining mining, quarry mining, agriculture and freight forwarding under one roof.">
+<meta property="og:description" content="Learn about Bright Esson World Company Ltd — a diversified natural-resources and logistics company combining mining, quarry mining, agribusiness, freight forwarding, commercial rentals and luxury vehicle sales under one roof.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://apearlsd-sudo.github.io/be-world-website/about.html">
 <meta property="og:image" content="https://apearlsd-sudo.github.io/be-world-website/assets/img/og-image.jpg">
@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="BE World Company Ltd">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="About Us — BE World Company Ltd">
-<meta name="twitter:description" content="Learn about Bright Esson World Company Ltd — a diversified natural-resources and logistics company combining mining, quarry mining, agriculture and freight forwarding under one roof.">
+<meta name="twitter:description" content="Learn about Bright Esson World Company Ltd — a diversified natural-resources and logistics company combining mining, quarry mining, agribusiness, freight forwarding, commercial rentals and luxury vehicle sales under one roof.">
 <meta name="twitter:image" content="https://apearlsd-sudo.github.io/be-world-website/assets/img/og-image.jpg">
 <link rel="icon" type="image/png" href="assets/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -225,6 +225,9 @@ main section[id],div.hero[id]{scroll-margin-top:4.6rem}
   transition:background .25s;
 }
 .teaser__item:last-child{border-right:0}
+/* six items → 3 columns; divider discipline per row */
+.teaser__item:nth-child(3n){border-right:0}
+.teaser__item:nth-child(n+4){border-bottom:1px solid var(--line)}
 .teaser__item:hover{background:var(--secondary)}
 .teaser__icon{
   width:3.1rem;height:3.1rem;border-radius:12px;flex:none;
@@ -581,8 +584,10 @@ main section[id],div.hero[id]{scroll-margin-top:4.6rem}
   .mobile-nav .btn{margin-top:1.2rem}
   .hero__badge{display:none}
   .teaser__grid{grid-template-columns:repeat(2,1fr)}
-  .teaser__item:nth-child(2){border-right:0}
-  .teaser__item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .teaser__item:nth-child(3n){border-right:1px solid var(--line)}
+  .teaser__item:nth-child(n+4){border-bottom:0}
+  .teaser__item:nth-child(2n){border-right:0}
+  .teaser__item:nth-child(-n+4){border-bottom:1px solid var(--line)}
   .services__grid{grid-template-columns:1fr}
   .stats__grid{grid-template-columns:repeat(2,1fr);gap:2.2rem 1.5rem}
   .process__grid{grid-template-columns:repeat(2,1fr);row-gap:2.2rem}
@@ -961,8 +966,10 @@ main .zoomable{cursor:zoom-in}
         <div class="sub">
         <a href="mining.html">Mining</a>
         <a href="quarry-mining.html">Quarry Mining</a>
-        <a href="agriculture.html">Agriculture</a>
+        <a href="agribusiness.html">Agribusiness</a>
         <a href="freight-forwarding.html">Freight Forwarding</a>
+        <a href="commercial-rentals.html">Commercial Rentals</a>
+        <a href="luxury-cars.html">Luxury Cars</a>
         </div>
       </div>
       <a href="contact.html">Contact</a>
@@ -985,8 +992,10 @@ main .zoomable{cursor:zoom-in}
       <a href="services.html">Services</a>
     <a class="sub-link" href="mining.html">Mining</a>
     <a class="sub-link" href="quarry-mining.html">Quarry Mining</a>
-    <a class="sub-link" href="agriculture.html">Agriculture</a>
+    <a class="sub-link" href="agribusiness.html">Agribusiness</a>
     <a class="sub-link" href="freight-forwarding.html">Freight Forwarding</a>
+    <a class="sub-link" href="commercial-rentals.html">Commercial Rentals</a>
+    <a class="sub-link" href="luxury-cars.html">Luxury Cars</a>
       <a href="contact.html">Contact</a>
   </div>
 </div>
@@ -1000,7 +1009,7 @@ main .zoomable{cursor:zoom-in}
   <div class="container page-hero__inner">
     <p class="kicker">About Us</p>
     <h1>From the Earth to the World</h1>
-    <p class="lead">One accountable partner across four capabilities — mining, quarrying, agriculture and freight forwarding — built on safety, integrity and genuine community partnership.</p>
+    <p class="lead">One accountable partner across six capabilities — mining, quarrying, agribusiness, freight forwarding, commercial building rentals and luxury vehicle sales — built on safety, integrity and genuine community partnership.</p>
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="index.html">Home</a><span class="sep">›</span><span aria-current="page">About Us</span>
     </nav>
@@ -1023,7 +1032,7 @@ main .zoomable{cursor:zoom-in}
       <p class="kicker">Who We Are</p>
       <h2 class="h2" style="margin-top:.8rem">A Diversified Company With a <span class="accent">Single Standard of Excellence</span></h2>
       <p class="lead" style="margin-top:1.1rem">Bright Esson World Company Ltd was built on a simple observation: resource projects rarely fail in the middle of an operation — they fail between them. Between the pit and the road. Between the field and the market. Between the port and the warehouse.</p>
-      <p class="lead" style="margin-top:1rem">That is why we deliberately combined mining, quarry mining, agriculture and freight forwarding under one roof. Our clients plan one contract with one team and one standard — and we carry the responsibility from the first survey to the final delivery note.</p>
+      <p class="lead" style="margin-top:1rem">That is why we deliberately combined mining, quarry mining, agribusiness, freight forwarding, commercial building rentals and luxury vehicle sales under one roof. Our clients plan one contract with one team and one standard — and we carry the responsibility from the first survey to the final delivery note.</p>
       <ul class="about__list">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>One accountable partner across the full value chain</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Standards-aligned safety, environmental and reporting systems</li>
@@ -1065,10 +1074,10 @@ main .zoomable{cursor:zoom-in}
   <div class="container">
     <div class="section-head section-head--center reveal">
       <p class="kicker">What Sets Us Apart</p>
-      <h2 class="h2" style="margin-top:.8rem">Four Pillars Behind Every Contract</h2>
+      <h2 class="h2" style="margin-top:.8rem">Six Pillars Behind Every Contract</h2>
     </div>
     <div class="pillars__grid" style="margin-top:1.6rem">
-      <div class="pillar reveal"><h3>Integrated Value Chain</h3><p>Pit, quarry, field and freight desk under one management system — so nothing is lost at the handover points where projects usually fail.</p></div>
+      <div class="pillar reveal"><h3>Integrated Value Chain</h3><p>Pit, quarry, field, processing line, freight desk, property portfolio and vehicle desk under one management system — so nothing is lost at the handover points where projects usually fail.</p></div>
       <div class="pillar reveal" data-delay="1"><h3>Safety Culture</h3><p>Documented HSE systems, toolbox talks, PPE discipline and stop-work authority for every crew member on every site.</p></div>
       <div class="pillar reveal" data-delay="2"><h3>Modern Fleet</h3><p>Excavators, crushers, drills, tractors and haulage trucks maintained on planned schedules — not on breakdowns.</p></div>
       <div class="pillar reveal" data-delay="3"><h3>People &amp; Communities</h3><p>Local hiring, skills transfer and honest engagement — because a licence to operate is earned in the community, not just issued on paper.</p></div>
@@ -1140,7 +1149,7 @@ main .zoomable{cursor:zoom-in}
         <img class="logo__img" src="assets/brand/logo.png" alt="" aria-hidden="true">
         <span class="logo__name">BE World<small>Company Ltd</small></span>
       </a>
-      <p style="margin-top:1.1rem">A diversified natural-resources and logistics company — mining, quarrying, agriculture and freight forwarding under one accountable roof.</p>
+      <p style="margin-top:1.1rem">A diversified natural-resources and logistics company — mining, quarrying, agribusiness, freight forwarding, commercial rentals and luxury vehicle sales under one accountable roof.</p>
       <div class="footer__social">
         <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
@@ -1164,8 +1173,10 @@ main .zoomable{cursor:zoom-in}
       <ul class="footer__links">
         <li><a href="mining.html">Mining</a></li>
         <li><a href="quarry-mining.html">Quarry Mining</a></li>
-        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="agribusiness.html">Agribusiness</a></li>
         <li><a href="freight-forwarding.html">Freight Forwarding</a></li>
+        <li><a href="commercial-rentals.html">Commercial Building Rentals</a></li>
+        <li><a href="luxury-cars.html">Luxury Car Sales &amp; Rentals</a></li>
       </ul>
     </div>
     <div class="footer__contact-col">
@@ -1492,9 +1503,9 @@ main .zoomable{cursor:zoom-in}
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Bright Esson World Company Ltd",
-  "description": "Diversified natural-resources and logistics company: mining, quarry mining, agriculture and freight forwarding.",
+  "description": "Diversified natural-resources and logistics company: mining, quarry mining, agribusiness, freight forwarding, commercial building rentals and luxury vehicle sales.",
   "slogan": "From the Earth to the World",
-  "knowsAbout": ["Mining","Quarry Mining","Agriculture","Freight Forwarding"]
+  "knowsAbout": ["Mining","Quarry Mining","Agribusiness","Shea Butter Production","Cashew Processing","Cocoa Processing","Freight Forwarding","Commercial Building Rentals","Luxury Vehicle Sales","Vehicle Rentals"]
 }
 </script>
 </body>

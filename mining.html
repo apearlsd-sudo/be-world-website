@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mining Services — BE World Company Ltd</title>
-<meta name="description" content="Contract mining, ore extraction and haulage operated to international safety and environmental standards — with transparent production reporting from day one.">
-<meta property="og:title" content="Mining Services — BE World Company Ltd">
-<meta property="og:description" content="Contract mining, ore extraction and haulage operated to international safety and environmental standards — with transparent production reporting from day one.">
+<title>Mining Services in Tarkwa — BE World Company Ltd</title>
+<meta name="description" content="Responsible mining operations in Tarkwa plus heavy mining equipment and truck rentals to mining companies such as Newmont Ghana — worker safety, environmental safety and mine pit land reclamation built in.">
+<meta property="og:title" content="Mining Services in Tarkwa — BE World Company Ltd">
+<meta property="og:description" content="Responsible mining operations in Tarkwa plus heavy mining equipment and truck rentals to mining companies such as Newmont Ghana — worker safety, environmental safety and mine pit land reclamation built in.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://apearlsd-sudo.github.io/be-world-website/mining.html">
 <meta property="og:image" content="https://apearlsd-sudo.github.io/be-world-website/assets/img/og-image.jpg">
@@ -14,8 +14,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="BE World Company Ltd">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mining Services — BE World Company Ltd">
-<meta name="twitter:description" content="Contract mining, ore extraction and haulage operated to international safety and environmental standards — with transparent production reporting from day one.">
+<meta name="twitter:title" content="Mining Services in Tarkwa — BE World Company Ltd">
+<meta name="twitter:description" content="Responsible mining operations in Tarkwa plus heavy mining equipment and truck rentals to mining companies such as Newmont Ghana — worker safety, environmental safety and mine pit land reclamation built in.">
 <meta name="twitter:image" content="https://apearlsd-sudo.github.io/be-world-website/assets/img/og-image.jpg">
 <link rel="icon" type="image/png" href="assets/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -225,6 +225,9 @@ main section[id],div.hero[id]{scroll-margin-top:4.6rem}
   transition:background .25s;
 }
 .teaser__item:last-child{border-right:0}
+/* six items → 3 columns; divider discipline per row */
+.teaser__item:nth-child(3n){border-right:0}
+.teaser__item:nth-child(n+4){border-bottom:1px solid var(--line)}
 .teaser__item:hover{background:var(--secondary)}
 .teaser__icon{
   width:3.1rem;height:3.1rem;border-radius:12px;flex:none;
@@ -581,8 +584,10 @@ main section[id],div.hero[id]{scroll-margin-top:4.6rem}
   .mobile-nav .btn{margin-top:1.2rem}
   .hero__badge{display:none}
   .teaser__grid{grid-template-columns:repeat(2,1fr)}
-  .teaser__item:nth-child(2){border-right:0}
-  .teaser__item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .teaser__item:nth-child(3n){border-right:1px solid var(--line)}
+  .teaser__item:nth-child(n+4){border-bottom:0}
+  .teaser__item:nth-child(2n){border-right:0}
+  .teaser__item:nth-child(-n+4){border-bottom:1px solid var(--line)}
   .services__grid{grid-template-columns:1fr}
   .stats__grid{grid-template-columns:repeat(2,1fr);gap:2.2rem 1.5rem}
   .process__grid{grid-template-columns:repeat(2,1fr);row-gap:2.2rem}
@@ -961,8 +966,10 @@ main .zoomable{cursor:zoom-in}
         <div class="sub">
         <a href="mining.html" class="active">Mining</a>
         <a href="quarry-mining.html">Quarry Mining</a>
-        <a href="agriculture.html">Agriculture</a>
+        <a href="agribusiness.html">Agribusiness</a>
         <a href="freight-forwarding.html">Freight Forwarding</a>
+        <a href="commercial-rentals.html">Commercial Rentals</a>
+        <a href="luxury-cars.html">Luxury Cars</a>
         </div>
       </div>
       <a href="contact.html">Contact</a>
@@ -985,8 +992,10 @@ main .zoomable{cursor:zoom-in}
       <a href="services.html">Services</a>
     <a class="sub-link" href="mining.html">Mining</a>
     <a class="sub-link" href="quarry-mining.html">Quarry Mining</a>
-    <a class="sub-link" href="agriculture.html">Agriculture</a>
+    <a class="sub-link" href="agribusiness.html">Agribusiness</a>
     <a class="sub-link" href="freight-forwarding.html">Freight Forwarding</a>
+    <a class="sub-link" href="commercial-rentals.html">Commercial Rentals</a>
+    <a class="sub-link" href="luxury-cars.html">Luxury Cars</a>
       <a href="contact.html">Contact</a>
   </div>
 </div>
@@ -1000,7 +1009,7 @@ main .zoomable{cursor:zoom-in}
   <div class="container page-hero__inner">
     <p class="kicker">Our Services</p>
     <h1>Mining</h1>
-    <p class="lead">Contract mining, ore extraction and haulage operated to international safety and environmental standards — with transparent production reporting from day one.</p>
+    <p class="lead">Responsible mining operations in Tarkwa — plus heavy mining equipment and truck rentals trusted by mining companies, with worker safety and land reclamation built into every program.</p>
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="index.html">Home</a><span class="sep">›</span><a href="services.html">Services</a><span class="sep">›</span><span aria-current="page">Mining</span>
     </nav>
@@ -1015,32 +1024,71 @@ main .zoomable{cursor:zoom-in}
     </div>
     <div class="reveal" data-delay="1">
       <p class="kicker">Service Overview</p>
-      <h2 class="h2" style="margin-top:.7rem">Mining Operations <span class="accent">Done Properly</span></h2>
-      <p class="lead" style="margin-top:.9rem">We provide owners and operators with a complete mining capability: site investigation, contract mining crews, drilling support, ore extraction and haulage. Every program starts with a survey and a written operating plan covering equipment, staffing, safety controls and production targets — so you know exactly what will happen on your site before the first machine moves.</p>
-      <p class="lead" style="margin-top:1rem">Our supervisors track tonnages, ore grades and equipment availability shift by shift, and share them with you in clear reports. When conditions change, we re-plan with you — not around you.</p>
+      <h2 class="h2" style="margin-top:.7rem">Responsible Mining <span class="accent">in Tarkwa</span></h2>
+      <p class="lead" style="margin-top:.9rem">We undertake responsible mining activities in Tarkwa — the heart of Ghana's gold country. Every operation starts with a survey and a written plan covering equipment, staffing, safety controls and production targets, and every program is run to international safety and environmental standards, with transparent reporting from day one.</p>
+      <p class="lead" style="margin-top:1rem">Responsibility is not a slogan here. We prioritize the safety of our workers on every shift, manage our environmental footprint as a daily discipline, and return mined land to a safe, useful state through mine pit and safe land reclamation.</p>
       <ul class="check-list">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Open-pit operations with documented HSE systems</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Experienced pit supervisors and trained operators</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Own haulage fleet — no third-party delays</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Responsible mining operations in Tarkwa</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Worker safety prioritized on every shift, with documented HSE systems</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Environmental safety and progressive land reclamation as standard</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EQUIPMENT RENTAL ================= -->
+<section class="section section--tint">
+  <div class="container detail detail--flip">
+    <div class="detail__media reveal">
+      <img data-plx="14" src="assets/img/equipment-fleet.jpg" alt="Fleet of heavy mining excavators and haul trucks lined up at a mine site" loading="lazy">
+    </div>
+    <div class="reveal" data-delay="1">
+      <p class="kicker">Equipment Rental</p>
+      <h2 class="h2" style="margin-top:.7rem">Heavy Equipment &amp; Trucks, <span class="accent">Rented to the Industry</span></h2>
+      <p class="lead" style="margin-top:.9rem">We rent heavy mining equipment and trucks to mining companies — including major operators such as Newmont Ghana. Excavators, dump trucks, loaders and support machinery arrive on site serviced, operated by trained crews, and backed by our maintenance team.</p>
+      <p class="lead" style="margin-top:1rem">For a mine, uptime is everything. Our rental fleet is managed on a strict preventive-maintenance schedule with standby arrangements on critical machines, so your production plan does not wait for a breakdown.</p>
+      <ul class="check-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Excavators, haul trucks and loaders available on contract</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Trusted by mining companies such as Newmont Ghana</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Preventive maintenance and trained operators included</li>
       </ul>
     </div>
   </div>
 </section>
 
 <!-- ================= WHAT'S INCLUDED ================= -->
-<section class="section section--tint">
+<section class="section">
   <div class="container">
     <div class="section-head section-head--center reveal">
       <p class="kicker">Scope of Service</p>
       <h2 class="h2" style="margin-top:.8rem">What Our Mining Service <span class="accent">Includes</span></h2>
     </div>
     <div class="include__grid" style="margin-top:1.6rem">
-      <div class="include-card reveal"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><div><h3>Site Investigation &amp; Survey</h3><p>Topographic survey, pit design input and ground-truth checks before mobilization.</p></div></div>
-      <div class="include-card reveal" data-delay="1"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10l4 5-9 12L3 9l4-5z"/><path d="M3 9h18"/><path d="m12 4 3 5-3 12-3-12z"/></svg></span><div><h3>Contract Mining &amp; Excavation</h3><p>Free-dig and excavator operations with load-and-carry cycles managed to plan.</p></div></div>
-      <div class="include-card reveal" data-delay="2"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 20 6.5-14 4 7.5L15 9l7 11H2z"/></svg></span><div><h3>Drilling &amp; Blasting Support</h3><p>Drill programs and blast logistics coordinated with licensed blasting partners.</p></div></div>
-      <div class="include-card reveal"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span><div><h3>Ore &amp; Waste Haulage</h3><p>Rigid and articulated dump trucks matched to pit geometry and haul profile.</p></div></div>
-      <div class="include-card reveal" data-delay="1"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>Grade Control &amp; Sampling</h3><p>Systematic sampling and reconciliation so plant feed matches the plan.</p></div></div>
-      <div class="include-card reveal" data-delay="2"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5"/><path d="M12 13v8"/></svg></span><div><h3>Rehabilitation Support</h3><p>Progressive land reshaping and closure groundwork as mining advances.</p></div></div>
+      <div class="include-card reveal"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><div><h3>Responsible Mining Operations</h3><p>Open-pit mining in Tarkwa run to a written operating plan — survey first, production targets agreed, work supervised.</p></div></div>
+      <div class="include-card reveal" data-delay="1"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span><div><h3>Heavy Equipment &amp; Truck Rental</h3><p>Mining equipment and trucks rented to mining companies — serviced, staffed and supported by our own maintenance team.</p></div></div>
+      <div class="include-card reveal" data-delay="2"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 20 6.5-14 4 7.5L15 9l7 11H2z"/></svg></span><div><h3>Excavation &amp; Haulage</h3><p>Free-dig and excavator operations with load-and-carry cycles matched to pit geometry and haul profile.</p></div></div>
+      <div class="include-card reveal"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>Workers Safety</h3><p>We prioritize our people: PPE discipline, risk assessments, daily inspections and crews empowered to stop unsafe work.</p></div></div>
+      <div class="include-card reveal" data-delay="1"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span><div><h3>Environmental Safety</h3><p>Dust suppression, water management and waste controls that keep the surrounding land and communities protected.</p></div></div>
+      <div class="include-card reveal" data-delay="2"><span class="include-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5"/><path d="M12 13v8"/></svg></span><div><h3>Mine Pit &amp; Safe Land Reclamation</h3><p>Progressive reshaping, soil restoration and revegetation — mined land returned to a safe, stable and useful state.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RECLAMATION ================= -->
+<section class="section section--tint">
+  <div class="container detail">
+    <div class="detail__media reveal">
+      <img data-plx="14" src="assets/img/reclamation.jpg" alt="Rehabilitated former mine land transformed into green terraced terrain" loading="lazy">
+    </div>
+    <div class="reveal" data-delay="1">
+      <p class="kicker">Reclamation</p>
+      <h2 class="h2" style="margin-top:.7rem">When the Mining Ends, <span class="accent">the Land Lives On</span></h2>
+      <p class="lead" style="margin-top:.9rem">A mine's last task is to give the land back. Our mine pit and safe land reclamation work reshapes depleted pits, restores soils and revegetates disturbed ground — closing out sites that are stable, safe for communities and ready for a productive afterlife, from farmland to forest.</p>
+      <ul class="check-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Pit reshaping and slope stabilization to agreed closure plans</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Soil restoration and revegetation with suitable species</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Handover-ready land documented for regulators and communities</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -1051,12 +1099,12 @@ main .zoomable{cursor:zoom-in}
     <div class="section-head reveal">
       <p class="kicker">Safety &amp; Compliance</p>
       <h2 class="h2" style="margin-top:.8rem;color:#fff">Mining Is Only Right <span class="accent">When It's Safe</span></h2>
-      <p class="lead">Every mining program runs on written method statements, daily inspections and a workforce empowered to stop unsafe work — no exceptions, no shortcuts.</p>
+      <p class="lead">Worker safety and environmental safety are the same discipline on our sites: written method statements, daily inspections and a workforce empowered to stop unsafe work — no exceptions, no shortcuts.</p>
     </div>
     <div class="safety__grid" style="margin-top:1.6rem">
-      <div class="safety__item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg><div><h3>HSE Management System</h3><p>Documented risk assessments, PPE discipline and incident reporting on every site.</p></div></div>
+      <div class="safety__item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg><div><h3>HSE Management System</h3><p>Documented risk assessments, PPE discipline and incident reporting on every site, every shift.</p></div></div>
       <div class="safety__item reveal" data-delay="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><div><h3>Trained, Retained Crews</h3><p>Operators and supervisors trained on the machines they run — and kept long-term.</p></div></div>
-      <div class="safety__item reveal" data-delay="2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5"/><path d="M12 13v8"/></svg><div><h3>Environmental Care</h3><p>Dust suppression, water management and progressive rehabilitation as standard practice.</p></div></div>
+      <div class="safety__item reveal" data-delay="2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg><div><h3>Environmental Care</h3><p>Dust suppression, water management and progressive rehabilitation as standard practice.</p></div></div>
     </div>
   </div>
 </section>
@@ -1064,7 +1112,7 @@ main .zoomable{cursor:zoom-in}
 <!-- ================= CTA STRIP ================= -->
 <section class="cta-strip">
   <div class="container cta-strip__row reveal">
-    <h2>Need a mining crew you can <span class="accent">actually rely on?</span></h2>
+    <h2>Need a mining crew or equipment you can <span class="accent">actually rely on?</span></h2>
     <div class="cta-strip__actions">
       <a class="btn btn--primary" href="contact.html">Request a Proposal<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       <a class="btn btn--ghost-light" href="tel:+233209215333">Call: +233 20 921 5333</a>
@@ -1082,7 +1130,7 @@ main .zoomable{cursor:zoom-in}
         <img class="logo__img" src="assets/brand/logo.png" alt="" aria-hidden="true">
         <span class="logo__name">BE World<small>Company Ltd</small></span>
       </a>
-      <p style="margin-top:1.1rem">A diversified natural-resources and logistics company — mining, quarrying, agriculture and freight forwarding under one accountable roof.</p>
+      <p style="margin-top:1.1rem">A diversified natural-resources and logistics company — mining, quarrying, agribusiness, freight forwarding, commercial rentals and luxury vehicle sales under one accountable roof.</p>
       <div class="footer__social">
         <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
@@ -1106,8 +1154,10 @@ main .zoomable{cursor:zoom-in}
       <ul class="footer__links">
         <li><a href="mining.html">Mining</a></li>
         <li><a href="quarry-mining.html">Quarry Mining</a></li>
-        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="agribusiness.html">Agribusiness</a></li>
         <li><a href="freight-forwarding.html">Freight Forwarding</a></li>
+        <li><a href="commercial-rentals.html">Commercial Building Rentals</a></li>
+        <li><a href="luxury-cars.html">Luxury Car Sales &amp; Rentals</a></li>
       </ul>
     </div>
     <div class="footer__contact-col">
@@ -1434,9 +1484,9 @@ main .zoomable{cursor:zoom-in}
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Bright Esson World Company Ltd",
-  "description": "Diversified natural-resources and logistics company: mining, quarry mining, agriculture and freight forwarding.",
+  "description": "Diversified natural-resources and logistics company: mining, quarry mining, agribusiness, freight forwarding, commercial building rentals and luxury vehicle sales.",
   "slogan": "From the Earth to the World",
-  "knowsAbout": ["Mining","Quarry Mining","Agriculture","Freight Forwarding"]
+  "knowsAbout": ["Mining","Quarry Mining","Agribusiness","Shea Butter Production","Cashew Processing","Cocoa Processing","Freight Forwarding","Commercial Building Rentals","Luxury Vehicle Sales","Vehicle Rentals"]
 }
 </script>
 </body>
