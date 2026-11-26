@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://apearlsd-sudo.github.io/be-world-website/sitemap.xml
